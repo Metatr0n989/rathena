@@ -54,6 +54,23 @@ Body:
       can_party: true
       attendance: true
   - Id: 1
+    Name: Player+
+    # Can do everything Players can and more
+    Inherit:
+      Player: true
+    Level: 0
+    Commands:
+      # Informational commands
+      commands: true
+      charcommands: true
+      help: true
+
+      # Feature commands
+      request: true
+      go: true
+    Permissions:
+      attendance: false
+  - Id: 2
     Name: Super Player
     # Can do everything Players can and more
     Inherit:
@@ -93,7 +110,7 @@ Body:
       langtype: true
     Permissions:
       attendance: false
-  - Id: 2
+  - Id: 3
     Name: Support
     Inherit:
       Super Player: true
@@ -115,7 +132,7 @@ Body:
     Permissions:
       receive_requests: true
       view_equipment: true
-  - Id: 3
+  - Id: 4
     Name: Script Manager
     Inherit:
       Support: true
@@ -131,7 +148,7 @@ Body:
     LogCommands: true
     Permissions:
       any_warp: true
-  - Id: 4
+  - Id: 5
     Name: Event Manager
     Inherit:
       Support: true
@@ -173,7 +190,7 @@ Body:
     Permissions:
       can_trade: false
       any_warp: true
-  - Id: 5
+  - Id: 6
     Name: VIP
     # Can do everything Players can
     Inherit:
