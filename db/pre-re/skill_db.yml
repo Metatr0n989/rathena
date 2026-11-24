@@ -33924,3 +33924,15 @@ Body:
     MaxLevel: 5
     Flags:
       IsGuild: true
+  - Id: 10017
+    Name: GD_CHARGESHOUT_FLAG
+    Description: Charge Shout Flag
+    MaxLevel: 1
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Flags:
+      IsGuild: true
+    Duration1: 300000
+    Cooldown: 900000
+    FixedCastTime: 1000
